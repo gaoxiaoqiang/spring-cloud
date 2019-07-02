@@ -1,0 +1,32 @@
+package tst.project.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+@Service
+public class EurekaRibbonService {
+	
+	 @Autowired
+	 RestTemplate restTemplate;
+	 
+	 public String getInfo() {
+		 String message;
+		 try {
+	            System.out.println("调用 服务 EUREKA-CLIENT/info");
+	            message = restTemplate.getForObject("http://EUREKA-CLIENT/info", String.class);
+	            System.out.println("服务 EUREKA-CLIENT/info 返回信息 : " + message);
+	            System.out.println("调用 服务 EUREKA-CLIENT/info 成功！");
+	        } catch (Exception ex) {
+	            message = ex.getMessage();
+	        }
+		 
+		 
+		 
+		 return message;
+		 
+	 }
+	 
+	 
+
+}

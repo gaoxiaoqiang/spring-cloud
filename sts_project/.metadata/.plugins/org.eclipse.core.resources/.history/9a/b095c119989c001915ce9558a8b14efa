@@ -1,0 +1,13 @@
+package tst.project.config;
+
+import tst.project.service.EurekaFeignService;
+
+public class EurekaFeignServiceFailure implements EurekaFeignService{
+
+	@Override
+	public String getInfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

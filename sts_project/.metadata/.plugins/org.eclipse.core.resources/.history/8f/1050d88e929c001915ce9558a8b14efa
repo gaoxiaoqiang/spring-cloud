@@ -1,0 +1,19 @@
+package tst.project.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.client.RestTemplate;
+
+
+//调用服务名称实现负载均衡
+@Service
+public interface EurekaFeignService {
+	
+	@Autowired
+	RestTemplate restTemplate;
+	
+	@RequestMapping(value="/info")
+	String getInfo();
+
+}

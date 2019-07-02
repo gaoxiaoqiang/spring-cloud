@@ -1,0 +1,11 @@
+package tst.project.service;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public interface EurekaFeignService {
+	
+	
+	@RequestMapping(value="/info")
+	String getInfo();
+
+}

@@ -1,0 +1,5 @@
+package tst.project.config;
+
+public class EurekaRibbonConfig {
+
+}

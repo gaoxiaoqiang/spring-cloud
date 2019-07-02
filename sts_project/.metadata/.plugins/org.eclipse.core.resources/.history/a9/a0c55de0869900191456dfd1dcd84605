@@ -1,0 +1,6 @@
+server.port=7000
+spring.application.name=eureka-consumer
+eureka.instance.hostname=127.0.0.1
+eureka.instance.lease-renewal-interval-in-seconds=5
+eureka.instance.lease-expiration-duration-in-seconds=10
+

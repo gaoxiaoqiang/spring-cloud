@@ -1,0 +1,11 @@
+package tst.project.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class EurekaRibbonService {
+	
+	 @Autowired
+	    RestTemplate restTemplate;
+
+}

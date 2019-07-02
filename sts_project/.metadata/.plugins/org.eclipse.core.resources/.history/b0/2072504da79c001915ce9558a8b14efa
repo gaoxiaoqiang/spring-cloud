@@ -1,0 +1,14 @@
+package tst.project;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@EnableConfigServer
+@SpringBootApplication
+public class EurekaConfigApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(EurekaConfigApplication.class, args);
+	}
+
+}

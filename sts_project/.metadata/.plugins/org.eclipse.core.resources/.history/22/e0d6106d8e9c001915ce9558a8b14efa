@@ -1,0 +1,23 @@
+package tst.project.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpRequest;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class EurekaClientController {
+	
+	
+	@Value("${server.port}")
+	private String port;
+	
+	public String info(HttpServletRequest request) {
+		
+		 String message = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + request.getServletPath();
+		return message;
+		
+	}
+
+}

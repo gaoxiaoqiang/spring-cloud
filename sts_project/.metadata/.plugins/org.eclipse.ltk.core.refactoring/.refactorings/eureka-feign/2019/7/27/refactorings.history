@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 2 elements from project &apos;eureka-feign&apos;&#x0D;&#x0A;- Original project: &apos;eureka-feign&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     eureka-feign/src/main/java/tst.project.controller&#x0D;&#x0A;     eureka-feign/src/main/java/tst.project.service" description="Delete elements" element1="/src\/main\/java&lt;tst.project.service" element2="/src\/main\/java&lt;tst.project.controller" elements="2" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1562049684630" subPackages="false" version="1.0"/>
+</session>

@@ -1,0 +1,13 @@
+package tst.project.service;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+#@FeignClient(vlaue="eureka-provider")
+public interface EurekaFeignService {
+	
+	
+	@RequestMapping(value="/info")
+	String getInfo();
+
+}

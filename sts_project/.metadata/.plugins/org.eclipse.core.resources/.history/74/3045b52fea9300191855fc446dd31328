@@ -1,0 +1,5 @@
+package tst.project;
+
+public class EurekaServerApplication {
+
+}

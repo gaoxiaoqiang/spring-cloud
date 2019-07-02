@@ -1,0 +1,15 @@
+package tst.project.service;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+//调用服务名称实现负载均衡
+@Service
+public interface EurekaFeignService {
+	
+	@RequestMapping(value="/info")
+	String getInfo();
+
+}

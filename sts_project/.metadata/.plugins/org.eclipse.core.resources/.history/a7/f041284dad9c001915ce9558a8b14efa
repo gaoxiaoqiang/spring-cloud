@@ -1,0 +1,17 @@
+package tst.project.service;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import tst.project.config.EurekaFeignServiceFailure;
+
+@FeignClient(value="eureka-provider",fallback = EurekaFeignServiceFailure.class)
+public interface EurekaFeignService {
+	
+	
+	@RequestMapping(value="/info")
+	String getInfo();
+	
+	
+
+}

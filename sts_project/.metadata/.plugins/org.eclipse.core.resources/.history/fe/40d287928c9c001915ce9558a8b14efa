@@ -1,0 +1,10 @@
+package tst.project.service;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(value="eureka-client")
+public class EurekaFeignService {
+	
+	String getInfo();
+
+}

@@ -1,0 +1,46 @@
+package tst.project;
+
+import javax.servlet.http.HttpServletRequest;
+
+import com.netflix.zuul.ZuulFilter;
+import com.netflix.zuul.context.RequestContext;
+import com.netflix.zuul.exception.ZuulException;
+
+public class AuthFilter extends ZuulFilter {
+
+	@Override
+	public boolean shouldFilter() {
+		// TODO Auto-generated method stub
+		return false; // 是否执行该过滤器，此处为true，说明需要过滤
+	}
+
+	@Override
+	public Object run() throws ZuulException {
+		
+		
+		RequestContext ctx=RequestContext.getCurrentContext();
+		HttpServletRequest token=ctx.getRequest();
+		
+		  String token = request.getParameter("token");// 获取请求的参数
+		
+		if("gxq".equals(token)) {
+			
+		}
+		
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String filterType() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int filterOrder() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

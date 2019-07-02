@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: eureka-order  cloud:    config:      label: master
+      profile: dev
+      fail-fast: true
+      uri: http://127.0.0.1:4000  #配置中心端口号      
+    
+    

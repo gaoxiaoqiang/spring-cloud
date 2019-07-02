@@ -1,0 +1,12 @@
+package tst.project.config;
+
+import tst.project.service.EurekaFeignService;
+
+public class EurekaFeignServiceFailure implements EurekaFeignService{
+
+	@Override
+	public String getInfo() {
+		return null;
+	}
+
+}
